@@ -1,0 +1,13 @@
+<h1 class="title">Rock Paper Scissors</h1>
+
+<form action="/throw" method="post">
+  <section class="form-group">
+    <select name="sign">
+      <% signs.each do |sign| %>
+        <option value="<%= sign %>"><%= sign.capitalize %></option>
+      <% end %>
+    </select>
+  </section>
+
+  <input type="submit" value="Throw" class="button button-pill button-action" />
+</form>
